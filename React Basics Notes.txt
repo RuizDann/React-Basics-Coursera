@@ -36,3 +36,25 @@ export default function App() {
     );
 };
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+There are a few ways that you can import and use the installed package. For example, to get the entire package's functionality, use the following import:
+
+import ReactPlayer from "react-player";
+
+If you are, for example, only planning to use videos from a site like YouTube, to reduce bundle size, you can use the following import:
+
+import ReactPlayer from "react-player/youtube";
+
+Here’s an example of using the react-player packaged in a small React app:
+
+import React from "react";
+import ReactPlayer from "react-player/youtube";
+
+const App = () => {
+  return (
+    <div>
+      <MyVideo />
+    </div>
+  );
+};
